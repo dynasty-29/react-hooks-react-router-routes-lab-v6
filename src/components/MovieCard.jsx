@@ -1,13 +1,13 @@
 import {Link} from 'react-router-dom';
 
-function MovieCard({title}) {
-  
+// 
+function MovieCard({ movie }) {
   return (
-    <article>
-        <h2>{title}</h2>
-        {/* What should go here? */}
-    </article>
+    <div>
+      <h2>{movie.title}</h2> 
+      <a href={`/movie/${movie.id}`}>View Info</a> 
+    </div>
   );
-};
+}
 
 export default MovieCard;

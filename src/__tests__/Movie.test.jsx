@@ -17,6 +17,7 @@ test("renders without any errors", () => {
   expect(errorSpy).not.toHaveBeenCalled();
 
   errorSpy.mockRestore();
+  
 });
 
 test("renders movie's title in an h1", async () => {
